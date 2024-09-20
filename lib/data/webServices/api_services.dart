@@ -6,26 +6,26 @@ import 'package:rickandmorty_app/data/Models/characters_model.dart';
 class ApiServices {
   Dio? dio;
 
-  charactersApiServices() {
+  ApiServices() {
     BaseOptions options = BaseOptions(
       baseUrl: baseUrl,
       receiveDataWhenStatusError: true,
-      connectTimeout: 20 * 1000 as Duration, // 20 seconds
-      receiveTimeout: 20 * 1000 as Duration, // 20 seconds
+      connectTimeout: const Duration(seconds: 20), // استخدام Duration مباشرة
+      receiveTimeout: const Duration(seconds: 20),
     );
 
     dio = Dio(options);
   }
 
-  Future<List<CharactersModel>> getAllCharacters() async {
+  Future<dynamic> getAllCharacters() async {
     try {
       final Response response = await dio!.get('character');
 
-      List<CharactersModel> characters = (response.data['results'] as List)
-          .map((character) => CharactersModel.fromJson(character))
-          .toList();
-
       if (response.statusCode == 200) {
+        List<CharactersModel> characters = (response.data['results'] as List)
+            .map((character) => CharactersModel.fromJson(character))
+            .toList();
+        print(response.data);
         return characters;
       } else {
         return [];

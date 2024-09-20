@@ -10,24 +10,25 @@ class CharactersModel {
   Origin origin;
   Location location;
   String image;
-  List<dynamic> episode;
+  List<String> episode;
   String url;
   DateTime created;
 
-  CharactersModel(
-      {required this.id,
-      required this.name,
-      required this.status,
-      required this.species,
-      required this.gender,
-      required this.origin,
-      required this.location,
-      required this.image,
-      required this.episode,
-      required this.url,
-      required this.created});
+  CharactersModel({
+    required this.id,
+    required this.name,
+    required this.status,
+    required this.species,
+    required this.gender,
+    required this.origin,
+    required this.location,
+    required this.image,
+    required this.episode,
+    required this.url,
+    required this.created,
+  });
 
-  factory CharactersModel.fromJson(json) {
+  factory CharactersModel.fromJson(Map<String, dynamic> json) {
     return CharactersModel(
       id: json['id'],
       name: json['name'],
@@ -37,7 +38,7 @@ class CharactersModel {
       origin: Origin.fromJson(json['origin']),
       location: Location.fromJson(json['location']),
       image: json['image'],
-      episode: List<String>.from(json['episode']),
+      episode: List<String>.from(json['episode'] ?? []),
       url: json['url'],
       created: DateTime.parse(json['created']),
     );
