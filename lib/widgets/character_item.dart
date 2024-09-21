@@ -42,6 +42,7 @@ class CustomGridViewForCharachters extends StatelessWidget {
           color: MyColors.myWhite,
           child: character!.image.isNotEmpty
               ? FadeInImage.assetNetwork(
+                  //TODO note Here !
                   fit: BoxFit.cover,
                   filterQuality: FilterQuality.high,
                   height: double.infinity,
