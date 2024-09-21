@@ -14,11 +14,12 @@ class GridViewCharacter extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.builder(
         itemCount: allCharacters!.length,
+        padding: EdgeInsets.zero,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2, // Number of items per row
-          crossAxisSpacing: 10, // Horizontal spacing between items
-          mainAxisSpacing: 10, // Vertical spacing between items
-          childAspectRatio: 0.6, // Aspect ratio of each item
+          crossAxisSpacing: 1, // Horizontal spacing between items
+          mainAxisSpacing: 1, // Vertical spacing between items
+          childAspectRatio: 2 / 3, // Aspect ratio of each item
         ),
         itemBuilder: (context, index) {
           return CustomGridViewForCharachters(

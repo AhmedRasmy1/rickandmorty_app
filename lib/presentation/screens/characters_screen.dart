@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:rickandmorty_app/business_logic/cubit/characters_cubit.dart';
 import 'package:rickandmorty_app/constants/my_colors.dart';
 import 'package:rickandmorty_app/data/Models/characters_model.dart';
@@ -50,14 +51,13 @@ class _CharactersScreenState extends State<CharactersScreen> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text(
-          'Characters',
-          style: TextStyle(
-            color: MyColors.myGrey,
-            fontSize: 30,
-          ),
-        ),
-        backgroundColor: MyColors.myYellow,
+        title: Text('Rick and Morty',
+            style: GoogleFonts.creepster(
+              color: Colors.green,
+              fontSize: 50,
+              fontWeight: FontWeight.w700,
+            )),
+        backgroundColor: MyColors.myWhite,
       ),
       body: buildBLocWidget(),
     );
