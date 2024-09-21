@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rickandmorty_app/business_logic/cubit/characters_cubit.dart';
 import 'package:rickandmorty_app/constants/my_colors.dart';
 import 'package:rickandmorty_app/data/Models/characters_model.dart';
+import 'package:rickandmorty_app/widgets/character_item.dart';
+import 'package:rickandmorty_app/widgets/grid_view_of_character.dart';
 
 class CharactersScreen extends StatefulWidget {
   const CharactersScreen({super.key});
@@ -31,7 +33,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
         );
       } else if (state is CharactersLoaded) {
         allCharacters = state.characters;
-        return const Text("yaraaab");
+        return GridViewCharacter(allCharacters: allCharacters);
       } else if (state is CharactersError) {
         return Center(
           child: Text(state.message),
