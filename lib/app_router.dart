@@ -7,6 +7,7 @@ import 'package:rickandmorty_app/data/repository/character_repository.dart';
 import 'package:rickandmorty_app/data/webServices/api_services.dart';
 import 'package:rickandmorty_app/presentation/screens/characters_details_screen.dart';
 import 'package:rickandmorty_app/presentation/screens/characters_screen.dart';
+import 'package:rickandmorty_app/presentation/screens/home_screen.dart';
 
 class AppRouter {
   late CharacterRepository characterRepository;
@@ -21,6 +22,11 @@ class AppRouter {
 
   Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
+      case homeScreen:
+        return MaterialPageRoute(
+          builder: (_) => const HomeScreen(),
+        );
+
       case charactersScreen:
         return MaterialPageRoute(
           builder: (_) => BlocProvider(

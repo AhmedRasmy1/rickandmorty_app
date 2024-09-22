@@ -75,6 +75,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xff22333b),
       appBar: AppBar(
         backgroundColor: MyColors.myGrey,
         title: _isSearching

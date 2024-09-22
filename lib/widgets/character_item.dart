@@ -24,7 +24,7 @@ class CustomGridViewForCharachters extends StatelessWidget {
         padding: const EdgeInsets.all(4),
         decoration: const BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(8)),
-            color: MyColors.myYellow),
+            color: Color(0xff5e503f)),
         child: GridTile(
           footer: Hero(
             tag: character!.id,
