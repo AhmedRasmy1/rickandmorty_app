@@ -9,6 +9,7 @@ class CharactersModel {
   String gender;
   Origin origin;
   Location location;
+  String type;
   String image;
   List<String> episode;
   String url;
@@ -26,6 +27,7 @@ class CharactersModel {
     required this.episode,
     required this.url,
     required this.created,
+    required this.type,
   });
 
   factory CharactersModel.fromJson(Map<String, dynamic> json) {
@@ -35,8 +37,9 @@ class CharactersModel {
       status: json['status'],
       species: json['species'],
       gender: json['gender'],
-      origin: Origin.fromJson(json['origin']),
-      location: Location.fromJson(json['location']),
+      type: json['type'],
+      origin: Origin.fromJson(json['origin'] ?? {}),
+      location: Location.fromJson(json['location'] ?? {}),
       image: json['image'],
       episode: List<String>.from(json['episode'] ?? []),
       url: json['url'],

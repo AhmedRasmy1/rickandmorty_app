@@ -38,7 +38,12 @@ class CustomSilverList extends StatelessWidget {
                     character: character,
                     text: "Gender: ",
                     characterDetails: character.gender),
-                const DividerWidget(endIndent: 313),
+                const DividerWidget(endIndent: 310),
+                CharactersDetailssssss(
+                    character: character,
+                    text: "Type: ",
+                    characterDetails: character.type),
+                const DividerWidget(endIndent: 335),
                 CharactersDetailssssss(
                     character: character,
                     text: "Origin: ",

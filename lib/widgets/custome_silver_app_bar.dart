@@ -20,14 +20,11 @@ class CustomSliverAppBar extends StatelessWidget {
       expandedHeight: 600,
       flexibleSpace: FlexibleSpaceBar(
         centerTitle: true,
-        title: Container(
-          color: Colors.white54,
-          child: Text(
-            character.name,
-            style: GoogleFonts.creepster(
-              color: Colors.black,
-              fontSize: 25,
-            ),
+        title: Text(
+          character.name,
+          style: GoogleFonts.creepster(
+            color: MyColors.myYellow,
+            fontSize: 25,
           ),
         ),
         background: Hero(
