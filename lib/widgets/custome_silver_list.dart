@@ -12,7 +12,7 @@ class CustomSilverList extends StatelessWidget {
     return SliverList(
       delegate: SliverChildListDelegate([
         Container(
-            color: const Color.fromARGB(255, 145, 108, 65),
+            color: const Color(0xff22333b),
             height: 780,
             padding: const EdgeInsets.all(14),
             child: Column(
