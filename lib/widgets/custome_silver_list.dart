@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:rickandmorty_app/constants/my_colors.dart';
 import 'package:rickandmorty_app/data/Models/characters_model.dart';
 import 'package:rickandmorty_app/widgets/characters_details_widget.dart';
 import 'package:rickandmorty_app/widgets/divider_widget.dart';
@@ -13,7 +12,7 @@ class CustomSilverList extends StatelessWidget {
     return SliverList(
       delegate: SliverChildListDelegate([
         Container(
-            color: const Color(0xff5e503f),
+            color: const Color.fromARGB(255, 145, 108, 65),
             height: 780,
             padding: const EdgeInsets.all(14),
             child: Column(

@@ -1,6 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_offline/flutter_offline.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:rickandmorty_app/business_logic/cubit/characters_cubit.dart';
 import 'package:rickandmorty_app/constants/my_colors.dart';
@@ -77,7 +78,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
     return Scaffold(
       backgroundColor: const Color(0xff22333b),
       appBar: AppBar(
-        backgroundColor: MyColors.myGrey,
+        backgroundColor: const Color(0xff22333b),
         title: _isSearching
             ? TextField(
                 controller: _searchController,
@@ -111,7 +112,30 @@ class _CharactersScreenState extends State<CharactersScreen> {
                 )
               ],
       ),
-      body: buildBLocWidget(),
+      body: OfflineBuilder(
+        connectivityBuilder: (
+          BuildContext context,
+          List<ConnectivityResult> connectivity,
+          Widget child,
+        ) {
+          final bool connected =
+              !connectivity.contains(ConnectivityResult.none);
+          if (connected) {
+            return buildBLocWidget();
+          } else {
+            return const CustomOfflineWidget();
+          }
+        },
+      ),
     );
+  }
+}
+
+class CustomOfflineWidget extends StatelessWidget {
+  const CustomOfflineWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold();
   }
 }
