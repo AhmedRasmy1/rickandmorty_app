@@ -2,13 +2,13 @@
 
 A new Flutter project.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- ![Start Page](https://github.com/AhmedRasmy1/rickandmorty_app/assets/images/Screenshot_1727028880.png)
+- ![Characters Page before fetchig data](https://github.com/AhmedRasmy1/rickandmorty_app/assets/images/Screenshot_1727028885.png)
+- ![Characters Page after fetchig data and loading for image](https://github.com/AhmedRasmy1/rickandmorty_app/assets/images/Screenshot_1727028897.png)
+- ![Finaly Character Page](https://github.com/AhmedRasmy1/rickandmorty_app/assets/images/Screenshot_1727028900.png)
+- ![Search Bar](https://github.com/AhmedRasmy1/rickandmorty_app/assets/images/Screenshot_1727028905.png)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
 For help getting started with Flutter development, view the
