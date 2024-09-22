@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rickandmorty_app/data/Models/characters_model.dart';
-import 'package:rickandmorty_app/widgets/characters_details_widget.dart';
-import 'package:rickandmorty_app/widgets/divider_widget.dart';
+import '../data/Models/characters_model.dart';
+import 'characters_details_widget.dart';
+import 'divider_widget.dart';
 
 class CustomSilverList extends StatelessWidget {
   const CustomSilverList({super.key, required this.character});

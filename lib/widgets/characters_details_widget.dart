@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rickandmorty_app/constants/my_colors.dart';
-import 'package:rickandmorty_app/data/Models/characters_model.dart';
+import '../constants/my_colors.dart';
+import '../data/Models/characters_model.dart';
 
 class CharactersDetailssssss extends StatelessWidget {
   const CharactersDetailssssss({

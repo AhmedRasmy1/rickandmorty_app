@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:rickandmorty_app/constants/strings.dart';
-import 'package:rickandmorty_app/data/Models/characters_model.dart';
+import '../../constants/strings.dart';
+import '../Models/characters_model.dart';
 
 class ApiServices {
   Dio? dio;

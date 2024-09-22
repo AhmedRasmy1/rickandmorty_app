@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rickandmorty_app/constants/strings.dart';
+import '../../constants/strings.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

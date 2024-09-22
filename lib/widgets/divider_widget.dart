@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rickandmorty_app/constants/my_colors.dart';
+import '../constants/my_colors.dart';
 
 class DividerWidget extends StatelessWidget {
   const DividerWidget({

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rickandmorty_app/data/Models/characters_model.dart';
-import 'package:rickandmorty_app/widgets/character_item.dart';
+import '../data/Models/characters_model.dart';
+import 'character_item.dart';
 
 class GridViewCharacter extends StatelessWidget {
   const GridViewCharacter({

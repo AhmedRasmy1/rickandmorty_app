@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:rickandmorty_app/business_logic/cubit/characters_cubit.dart';
 import 'package:rickandmorty_app/constants/my_colors.dart';
 import 'package:rickandmorty_app/data/Models/characters_model.dart';
+import 'package:rickandmorty_app/widgets/custom_offline_widget.dart';
 import 'package:rickandmorty_app/widgets/grid_view_of_character.dart';
 
 class CharactersScreen extends StatefulWidget {
@@ -126,16 +127,12 @@ class _CharactersScreenState extends State<CharactersScreen> {
             return const CustomOfflineWidget();
           }
         },
+        child: const Center(
+          child: CircularProgressIndicator(
+            color: MyColors.myYellow,
+          ),
+        ),
       ),
     );
-  }
-}
-
-class CustomOfflineWidget extends StatelessWidget {
-  const CustomOfflineWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold();
   }
 }
