@@ -1,16 +1,15 @@
 # rickandmorty_app
 
-A new Flutter project.
+This is a Flutter-based application designed to display all RickAndMorty Characters and there details , This application for RickAndMorty Lovers 
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+![App Screenshot](assets/images/HomePage.png)
+![App Screenshot](assets/images/LoadingCircle.png)
+![App Screenshot](assets/images/CharactersPage.png)
+![App Screenshot](assets/images/SearchFieldText.png)
+![App Screenshot](assets/images/ResultForSearch.png)
+![App Screenshot](assets/images/SilverAppBarPage.png)
+![App Screenshot](assets/images/SilverListPage.png)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
